@@ -64,9 +64,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>List of employees</h1>
+      {/* <h1>List o</h1> */}
 
-      <button>ADD</button>
+      <button style={{padding:"5px", borderRadius:"10px", margin:"5px", backgroundColor:"green"}}>ADD</button>
 
       <table>
         <thead>
@@ -90,7 +90,7 @@ function App() {
                   <td>{data.phone}</td>
                   <td>{data.country}</td>
                   <td>
-                    <button>DELETE</button>
+                    <button style={{padding:"5px", borderRadius:"10px", margin:"5px", backgroundColor:"red"}}>DELETE</button>
                   </td>
                 </tr>
               ))}
@@ -99,9 +99,9 @@ function App() {
         </tbody>
       </table>
 
-      <div>
-        <button onClick={() => pageChangeHandler("prev")}>previous</button>
-        <button onClick={() => pageChangeHandler("next")}>next</button>
+      <div  > 
+        <button style={{padding:"5px", borderRadius:"10px", margin:"5px"}} onClick={() => pageChangeHandler("prev")}>BACK</button>
+        <button onClick={() => pageChangeHandler("next")} style={{padding:"5px", borderRadius:"10px"}}>NEXT</button>
       </div>
     </div>
   );
