@@ -27,7 +27,7 @@ function App() {
 
   const fetchData = async () => {
     const response = await fetch(
-      `http://mockrestapi.herokuapp.com/api/employee?pageNo=1&limit=5.json`,
+      `https://mockrestapi.herokuapp.com/api/employee?pageNo=1&limit=5.json`,
       {
         headers: {
           "Content-Type": "application/json",
